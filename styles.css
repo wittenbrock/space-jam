@@ -1,7 +1,41 @@
+/*
+=======================================
+Global
+=======================================
+*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   color: red;
   background-color: black;
   background-image: url("pictures/background-stars.gif");
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+/*
+=======================================
+Screen Reader Only
+=======================================
+*/
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  overflow: hidden;
 }
 
 /*
