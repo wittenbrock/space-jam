@@ -1,0 +1,34 @@
+body {
+  color: red;
+  background-color: black;
+  background-image: url("pictures/background-stars.gif");
+}
+
+/*
+=======================================
+Footer
+=======================================
+*/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto;
+  position: absolute;
+  bottom: 2.5rem;
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+
+ul a {
+  font-size: smaller;
+  color: rgb(210, 108, 93);
+  margin: 5px;
+}
