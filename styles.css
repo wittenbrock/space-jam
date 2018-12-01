@@ -52,6 +52,53 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.jam-central {
+
+}
+
+.b-ball {
+
+}
+
+.pressbox {
+
+}
+
+.lunar-tunes {
+
+}
+
+.the-line-up {
+
+}
+
+.jump-station {
+
+}
+
+.junior-jam {
+
+}
+
+.warner-studio-store {
+
+}
+
+.stellar-souvenirs {
+
+}
+
+.behind-the-jam {
+
+}
+
+.site-map {
+
 }
 
 /*
