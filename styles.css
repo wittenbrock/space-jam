@@ -15,6 +15,9 @@ body {
   color: red;
   background-color: black;
   background-image: url("pictures/background-stars.gif");
+  display: grid;
+  grid-template: "main"
+                 "footer";
 }
 
 img {
@@ -40,6 +43,19 @@ Screen Reader Only
 
 /*
 =======================================
+Space Jam Section
+=======================================
+*/
+
+main {
+  background-image: url("pictures/space-jam-logo.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80vh;
+}
+
+/*
+=======================================
 Footer
 =======================================
 */
@@ -48,10 +64,8 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: auto;
-  position: absolute;
-  bottom: 2.5rem;
-  width: 100%;
+  margin-top: 2rem;
+  height: 20vh;
 }
 
 ul {
