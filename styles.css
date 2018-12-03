@@ -12,12 +12,15 @@ Global
 }
 
 body {
-  color: red;
   background-color: black;
   background-image: url("pictures/background-stars.gif");
+  color: red;
   display: grid;
-  grid-template: "main"
-                 "footer";
+  grid-template-rows: .8fr .2fr;
+  grid-template-areas: "main"
+                       "footer";
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -48,21 +51,26 @@ Space Jam Section
 */
 
 main {
-  background-image: url("pictures/space-jam-logo.gif");
-  background-repeat: no-repeat;
-  background-position: center;
+  grid-area: main;
   height: 80vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(6, 1fr);
+}
+
+.planet {
+  position: absolute;
+}
+
+.space-jam-logo {
+  left: 40.33%;
+  top: 32%;
 }
 
 .jam-central {
-
+  right: 7.75rem;
+  top: 1.5rem;
 }
 
 .b-ball {
-
+  right: 9.90rem;
 }
 
 .pressbox {
@@ -108,11 +116,11 @@ Footer
 */
 
 footer {
+  grid-area: footer;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 2rem;
-  height: 20vh;
 }
 
 ul {
