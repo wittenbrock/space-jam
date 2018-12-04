@@ -52,61 +52,121 @@ Space Jam Section
 
 main {
   grid-area: main;
+  background: url("pictures/space-jam-logo.gif");
+  background-position: center;
+  background-repeat: no-repeat;
   height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(5, 100px);
+  grid-template-rows: repeat(5, 100px);
+  justify-content: center;
+  align-content: center;
+}
+
+.container {
+  position: relative;
 }
 
 .planet {
   position: absolute;
 }
 
-.space-jam-logo {
-  left: 40.33%;
-  top: 32%;
+.jam-central-box {
+  grid-area: 2/3;
 }
 
 .jam-central {
-  right: 7.75rem;
-  top: 1.5rem;
+  left: 15px;
+  bottom: 60px;
+}
+
+.b-ball-box {
+  grid-area: 2/4;
 }
 
 .b-ball {
-  right: 9.90rem;
+  left: 19px;
+  bottom: 90px;
+}
+
+.pressbox-box {
+  grid-area: 2/2;
+  width: 150px;
 }
 
 .pressbox {
+  right: 75px;
+  top: 10px;
+}
 
+.lunar-tunes-box {
+  grid-area: 2/5;
 }
 
 .lunar-tunes {
+  right: 5px;
+  bottom: 30px;
+}
 
+.the-line-up-box {
+  grid-area: 3/1;
 }
 
 .the-line-up {
+  left: 15px;
+}
 
+.jump-station-box {
+  grid-area: 3/5;
 }
 
 .jump-station {
+  left: 40px;
+  top: 20px;
+}
 
+.junior-jam-box {
+  grid-area: 4/1;
 }
 
 .junior-jam {
+  bottom: 70px;
+  left: 20px;
+}
 
+.warner-studio-store-box {
+  grid-area: 4/5;
 }
 
 .warner-studio-store {
+  top: 15px;
+  right: 10px;
+}
 
+.stellar-souvenirs-box {
+  grid-area: 5/2;
 }
 
 .stellar-souvenirs {
+  right: 30px;
+  bottom: 80px;
+}
 
+.behind-the-jam-box {
+  grid-area: 5/4;
 }
 
 .behind-the-jam {
-
+  left: 12px;
+  bottom: 52px;
+}
+.site-map-box {
+  grid-area: 5/3;
 }
 
 .site-map {
-
+  top: 19px;
+  right: 10px;
 }
 
 /*
@@ -132,6 +192,6 @@ ul {
 
 ul a {
   font-size: smaller;
-  color: rgb(210, 108, 93);
+  color: red;
   margin: 5px;
 }
